@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra ký tự</title>
+</head>
+<body>
+    <script>
+        function kiemTraKyTu(input) {
+            if (/^[a-zA-Z]$/.test(input)) {
+                alert(`Ký tự ${input} là chữ cái`);
+            } else {
+                alert("Không phải chữ cái");
+            }
+        }
+        let nhap = prompt("Nhập vào một ký tự:");
+        if (nhap !== null && nhap.trim() !== "") {
+            kiemTraKyTu(nhap);
+        } else {
+            alert("Bạn chưa nhập ký tự hợp lệ!");
+        }
+    </script>
+</body>
+</html>

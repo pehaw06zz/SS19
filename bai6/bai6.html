@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Nhap vao so a"));
+        let b = parseFloat(prompt("Nhap vao so b"));
+        let c = parseFloat(prompt("Nhap vao so c"));
+        let d=b*b-4*a*c;
+        if(d<0){
+            alert("Phuong trinh vo nghiem");
+        }else if(d===0){
+            let x = -b / (2*a);
+            alert(`Phuong trinh co 2 nghiem kep: x1 = x2 = ${x}` );
+        }else{
+            let x1 = ( -b + Math.sqrt(d))/ (2*a);
+            let x2 = (-b + Math.sqrt(d))/ (2*a);
+            alert(`Phương trình có 2 nghiệm phân biệt: x1 = ${x1}, x2 = ${x2}`);
+        }
+    </script>
+</body>
+</html>
